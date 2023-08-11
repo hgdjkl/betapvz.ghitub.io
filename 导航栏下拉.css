@@ -1,5 +1,5 @@
 ul{
-    width: 580px;
+    width: 800px;
     height: 30px;
     line-height: 30px;
     background-color: rgb(6, 7, 7);
@@ -10,7 +10,7 @@ ul li{
 }/* 删除列表的样式并设置浮动 */
 a{
     color: white;
-    padding: 5px;
+    padding: 20px;
     margin: 0px;
     text-decoration: none;
 }/* 设置a标签的样式 */
