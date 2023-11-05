@@ -93,3 +93,28 @@ a{
     opacity: 1;
     right: 0;
   }
+
+
+
+
+  .niceButton3 {
+    background-color: #1795bb;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .niceButton3:hover {
+    background-color: #fff;
+    color: #1795bb;
+    border: 1px solid #ccc;
+  }
+
