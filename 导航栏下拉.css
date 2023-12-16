@@ -119,25 +119,3 @@ a{
     border: 1px solid #ccc;
   }
 
-
-
-
-
-  <style type="text/css">
-
-a:link,a:visited{
-
- text-decoration:none;  /*超链接无下划线*/
-
-}
-
-a:hover{
-
- text-decoration:underline;  /*鼠标放上去有下划线*/
-
-}
-
-</style>
-————————————————
-版权声明：本文为CSDN博主「chengyyoo」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/chengyyoo/article/details/78587296
