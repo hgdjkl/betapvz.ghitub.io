@@ -9,7 +9,7 @@ ul{
     width: 800px;
     height: 30px;
     line-height: 30px;
-    background-color: rgb(6, 7, 7);
+    background-color: #8888cc;
     font-family: 'Secret Font'
 }/* 对导航栏的整体样式进行设置 */
 ul li{
@@ -21,6 +21,7 @@ a{
     padding: 20px;
     margin: 0px;
     text-decoration: none;
+    opacity: 0.9;
 }/* 设置a标签的样式 */
 
 .nav1 {
@@ -59,7 +60,7 @@ a{
 .niceButton5 {
     display: inline-block;
     border-radius: 20px;
-    background-color: black;
+    background-color: #8888cc;
     border: none;
     color: #ffff;
     text-align: center;
@@ -99,7 +100,7 @@ a{
 
 
   .niceButton3 {
-    background-color: black;
+    background-color: #8888cc;
     border-radius: 12px;
     border: none;
     color: white;
