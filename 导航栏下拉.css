@@ -55,7 +55,7 @@ a{
 }
 
 
-
+/* 下面是大按钮 */
 /* 悬停添加箭头图标 */
 .niceButton5 {
     display: inline-block;
@@ -95,10 +95,14 @@ a{
     opacity: 1;
     right: 0;
   }
+  
 
 
 
 
+
+
+/* 下面是小按钮 */
   .niceButton3 {
     background-color: #8888cc;
     border-radius: 12px;
@@ -119,6 +123,7 @@ a{
     background-color: #fff;
     color: #1795bb;
     border: 1px solid #ccc;
+    padding: 20px 40px;
   }
 
 
