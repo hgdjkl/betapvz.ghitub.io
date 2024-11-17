@@ -150,3 +150,36 @@ a{
   font-size: 27px;
   font-weight: 400;
 }
+
+
+
+
+
+
+.次元幻想2 {
+  /* 去边框 */
+border:none;
+
+width: 360px;
+height: 100px;
+background: url(img/options_backtogamebutton0.png);
+
+font-size: 28px;
+font-weight: 400;
+font-family: 'Secret Font';
+}
+
+.次元幻想:hover {
+/* 鼠标悬停时 */
+width: 360px;
+height: 100px;
+background: url(img/options_backtogamebutton2.png);
+font-size: 27px;
+font-weight: 400;
+}
+
+
+
+
+
+
