@@ -24,11 +24,73 @@
         </div>
         </div> 
     </ul>
+
 </a>
     <a href="https://www.bilibili.com/opus/980666618551992329?spm_id_from=333.999.0.0">
         <button class="次元幻想">次元裂痕</button>
 </a>
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113485920867469&bvid=BV1ZRmoYEEbh&cid=26770538572&p=1" width="50%" height="600" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113485920867469&bvid=BV1ZRmoYEEbh&cid=26770538572&p=1" width="80%" height="600" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
+
+
+
+</a>
+<a href="https://space.bilibili.com/369468184/channel/seriesdetail?sid=412241">
+    <button class="次元幻想">植茵次元视频</button>
+</a>
+
+
+
+
+<style>
+    .modal {
+       display: none;
+       position: fixed;
+       z-index: 9999;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.8);
+    }
+  
+    .modal-image {
+       display: block;
+       max-width: 90%;
+       max-height: 90%;
+       margin: auto;
+       margin-top: 5%;
+    }
+ </style>
+  
+ <img src="img/预览.png" alt="图像" onclick="showModal(this)">
+  
+ <div id="modal" class="modal" onclick="hideModal()">
+   <img id="modal-image" class="modal-image">
+ </div>
+  
+ <script>
+    function showModal(image) {
+       var modal = document.getElementById("modal");
+       var modalImage = document.getElementById("modal-image");
+       modal.style.display = "block";
+       modalImage.src = image.src;
+    }
+  
+    function hideModal() {
+       var modal = document.getElementById("modal");
+       modal.style.display = "none";
+    }
+ </script>
+
+
+
+
+
+
+
+
     
     <!DOCTYPE html>
     <html>
