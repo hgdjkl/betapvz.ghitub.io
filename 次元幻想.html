@@ -7,43 +7,55 @@
     <title>植物大战僵尸beta版下载站</title>
     <link rel="stylesheet" href="导航栏下拉.css">
     <style>
-        /* 弹窗样式 */
-        .popup {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
+/* 弹窗样式 */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
-        .popup-content {
-            background-color: white;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            max-width: 500px;
-            text-align: center;
-        }
+.popup-content {
+    background-color: white;
+    margin: 10% auto; /* 调整了 margin 以适应更大的弹窗 */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* 增大宽度 */
+    max-width: 700px; /* 增大最大宽度 */
+    height: 40%; /* 增加高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Secret Font'; /* 设置字体系列 */
+    font-size: 32px; /* 设置字体大小 */
+    color: #333; /* 设置字体颜色 */
+    font-weight: normal; /* 设置字体粗细 */
+    position: relative; /* 添加相对定位 */
+}
 
-        .close-btn {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px; /* 右上角位置 */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-        .close-btn:hover,
-        .close-btn:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
