@@ -153,22 +153,6 @@ a{
 
 
 
-
-
-
-.次元幻想2 {
-  /* 去边框 */
-border:none;
-
-width: 360px;
-height: 100px;
-background: url(img/options_backtogamebutton0.png);
-
-font-size: 28px;
-font-weight: 400;
-font-family: 'Secret Font';
-}
-
 .次元幻想:hover {
 /* 鼠标悬停时 */
 width: 360px;
@@ -182,4 +166,77 @@ font-weight: 400;
 
 
 
+/* 次元幻想新界面2 */
 
+.次元幻想2 {
+  position: relative;
+  width: 150px;
+  height: 302px;
+  border: none;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: 'Secret Font';
+  background-color: transparent; /* 改为透明背景 */
+}
+
+.次元幻想2 .button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; /* 确保文字在背景图片之上 */
+}
+
+.次元幻想2 .button-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/150px-蓝色传送门.png);
+  z-index: 1; /* 确保背景图片在文字之下 */
+  transition: transform 0.5s ease-in-out;
+}
+
+.次元幻想2 .button-background-copy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(img/150px-蓝色传送门.png);
+  z-index: 1; /* 确保背景图片在文字之下 */
+  transition: transform 0.5s ease-in-out;
+}
+
+.次元幻想2:hover .button-background {
+  transform: translateX(150px) rotate(360deg); /* 平移和旋转同时生效 */
+}
+
+.次元幻想2:hover .button-background-copy {
+  transform: translateX(-150px) rotate(-360deg); /* 平移和旋转同时生效 */
+}
+
+
+.次元幻想2 .button-蒙版 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #8888cc;
+  z-index: 1; /* 确保背景图片在文字之下 */
+  transition: transform 0.5s ease-in-out, width 0.3s ease, left 0.3s ease; /* 过渡效果 */
+  border-radius: 20px; /* 圆角 */
+}
+
+.次元幻想2:hover .button-蒙版 {
+  position: absolute;
+  top: 0;
+  left: -10%; /* 向左移动10% */
+  width: 120%; /* 增加宽度 */
+  height: 100%;
+  background: #8888cc;
+  z-index: 1; /* 确保背景图片在文字之下 */
+  border-radius: 20px; /* 圆角 */
+}
