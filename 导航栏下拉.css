@@ -174,7 +174,7 @@ font-weight: 400;
   display: flex;
   justify-content: center; /* 水平居中 */
   align-items: center;     /* 垂直居中 */
-  height: 100vh;           /* 容器高度为视口高度 */
+  
 }
 
 
@@ -259,7 +259,7 @@ font-weight: 400;
 /* 将图片设置为绝对定位 */
 .preview-image {
   position: absolute; /* 设置绝对定位 */
-  top: 100%; /* 垂直居中 */
+  top: 80%; /* 垂直居中 */
   left: 20%; /* 从按钮右侧开始 */
   transform: translateY(-50%); /* 垂直居中 */
   margin-left: 20px; /* 调整图片与按钮之间的间距 */
