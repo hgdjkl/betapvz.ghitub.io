@@ -130,13 +130,10 @@ a{
 /* 次元幻想新界面 */
 
 .次元幻想 {
-    /* 去边框 */
-  border:none;
-
+  border: none;
   width: 360px;
   height: 100px;
   background: url(img/options_backtogamebutton0.png);
-
   font-size: 28px;
   font-weight: 400;
   font-family: 'Secret Font';
@@ -186,7 +183,7 @@ font-weight: 400;
   width: 150px;
   height: 302px;
   border: none;
-  font-size: 28px;
+  font-size: 50px;
   font-weight: 400;
   font-family: 'Secret Font';
   background-color: transparent; /* 改为透明背景 */
@@ -269,3 +266,43 @@ font-weight: 400;
   width: 2000px; /* 图片宽度 */
   height: auto; /* 自动高度 */
 }
+
+
+/* 上边的箭头符号 */
+.次元幻想2 .button-text::before {
+  content: '⬇️'; /* 直接设置内容 */
+  position: absolute;
+  top: -90px; /* 调整位置 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 水平居中 */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.次元幻想2:hover .button-text::before {
+  opacity: 1;
+}
+
+/* 下边的箭头符号 */
+.次元幻想2 .button-text::after {
+  content: '⬆️'; /* 直接设置内容 */
+  position: absolute;
+  bottom: -90px; /* 调整位置 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 水平居中 */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.次元幻想2:hover .button-text::after {
+  opacity: 1;
+}
+
+
+
+
+/* 悬停时放大文字 */
+.次元幻想2:hover .button-text {
+  font-size: 60px; /* 悬停时的文字大小 */
+}
+
