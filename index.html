@@ -13,7 +13,6 @@
     <meta property="og:url" content="https://yourdomain.com"> <!-- 替换为实际网址 -->
     <meta name="robots" content="index, follow">
 
-
     <link rel="stylesheet" href="导航栏下拉.css">
     <style>
         body {
@@ -51,6 +50,12 @@
             color: #333;
             font-weight: normal;
             position: relative;
+            /* 添加背景图片 */
+            background-image: url('img/Plants\ vs.\ Zombies.png'); /* 替换为实际图片路径 */
+            background-size: 75%;
+            background-position: center top; /* 背景图片位于顶部居中 */
+            background-repeat: no-repeat; /* 不重复背景图片 */
+            border-radius: 10px; /* 添加圆角 */
         }
 
         .close-btn {
@@ -83,19 +88,58 @@
             text-align: center;
         }
 
-        /* 左下角图片样式 */
+        /* 新增的样式 */
         .bottom-left-image {
             position: fixed;
-            bottom: 10px;
-            left: 10px;
-            width: 136.5x; /* 根据需要调整图片大小 */
-            height: 186px; /* 根据需要调整图片大小 */
+            bottom: 0;
+            left: 200px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <!-- 右上角图片 -->
-    <img src="img\盾玛.gif" alt="盾玛" class="bottom-left-image">
+    
+    <style>
+        .modal {
+           display: none;
+           position: fixed;
+           z-index: 9999;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.8);
+        }
+      
+        .modal-image {
+           display: block;
+           max-width: 90%;
+           max-height: 90%;
+           margin: auto;
+           margin-top: 5%;
+        }
+     </style>
+      
+     <img src="img\盾玛.gif" alt="图像" class="bottom-left-image" onclick="showModal(this)">
+      
+     <div id="modal" class="modal" onclick="hideModal()">
+       <img id="modal-image" class="modal-image">
+     </div>
+      
+     <script>
+        function showModal(image) {
+           var modal = document.getElementById("modal");
+           var modalImage = document.getElementById("modal-image");
+           modal.style.display = "block";
+           modalImage.src = image.src;
+        }
+      
+        function hideModal() {
+           var modal = document.getElementById("modal");
+           modal.style.display = "none";
+        }
+     </script>
+    
 
     <ul>
         <li><a href="index.html">主页</a></li>
@@ -179,7 +223,7 @@
     <div class="text-box">
         自建小网站，目前最新内测版网站<br />
         本网站更新到的版本（会与官方群有延迟）：beta6.66T31<br />
-        背景来源于网络，版权归属SEGA
+        背景来源于网络，版权归属SEGA和Project Moon
     </div>
 
     <!-- 弹窗提示 -->

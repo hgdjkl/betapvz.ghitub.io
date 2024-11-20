@@ -20,25 +20,31 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.popup-content {
-    background-color: white;
-    margin: 10% auto; /* 调整了 margin 以适应更大的弹窗 */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 90%; /* 增大宽度 */
-    max-width: 700px; /* 增大最大宽度 */
-    height: 40%; /* 增加高度 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-family: 'Secret Font'; /* 设置字体系列 */
-    font-size: 32px; /* 设置字体大小 */
-    color: #333; /* 设置字体颜色 */
-    font-weight: normal; /* 设置字体粗细 */
-    position: relative; /* 添加相对定位 */
-}
+        .popup-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 90%;
+            max-width: 700px;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Secret Font';
+            font-size: 32px;
+            color: #333;
+            font-weight: normal;
+            position: relative;
+            /* 添加背景图片 */
+            background-image: url('img/Plants\ vs.\ Zombies.png'); /* 替换为实际图片路径 */
+            background-size: 75%;
+            background-position: center top; /* 背景图片位于顶部居中 */
+            background-repeat: no-repeat; /* 不重复背景图片 */
+            border-radius: 10px; /* 添加圆角 */
+        }
 
 .close-btn {
     color: #aaa;
