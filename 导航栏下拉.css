@@ -126,6 +126,24 @@ a{
     padding: 20px 40px;
   }
 
+.floating-image {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 240px;
+    height: auto;
+    cursor: pointer;
+    z-index: 50;
+
+    transform: scaleX(-1); /* 左右镜像 */
+}
+
+
+
+
+
+
+
 
 /* 次元幻想新界面 */
 
@@ -304,18 +322,4 @@ font-weight: 400;
 /* 悬停时放大文字 */
 .次元幻想2:hover .button-text {
   font-size: 60px; /* 悬停时的文字大小 */
-}
-
-
-
-.floating-image {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 240px;
-    height: auto;
-    cursor: pointer;
-    z-index: 50;
-
-    transform: scaleX(-1); /* 左右镜像 */
 }
