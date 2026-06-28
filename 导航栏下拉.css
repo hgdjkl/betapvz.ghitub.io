@@ -455,6 +455,97 @@ main,
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.38);
 }
 
+.simple-page {
+  display: flex;
+  justify-content: center;
+  width: min(1000px, calc(100% - 32px));
+  margin: 28px auto 70px;
+  text-align: center;
+}
+
+.content-panel {
+  width: min(860px, 100%);
+  padding: 28px;
+  color: #fff8dc;
+  background: rgba(20, 35, 22, 0.9);
+  border: 1px solid rgba(255, 248, 220, 0.24);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.content-panel .section-label {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffd873;
+  text-shadow: none;
+}
+
+.content-panel h1 {
+  margin: 0;
+  color: #fff8dc;
+  font-size: clamp(34px, 5vw, 54px);
+  font-weight: 400;
+  text-shadow: none;
+}
+
+.page-intro {
+  width: auto;
+  max-width: 720px;
+  margin: 12px auto 22px;
+  color: rgba(255, 248, 220, 0.9);
+  line-height: 1.6;
+  text-shadow: none;
+}
+
+.qq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.qq-card {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  min-height: 128px;
+  padding: 18px;
+  color: #121b11;
+  background: #fffaf0;
+  border: 1px solid rgba(255, 248, 220, 0.45);
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(16, 28, 18, 0.1);
+}
+
+.qq-card span {
+  color: #1d6c34;
+  font-size: 16px;
+}
+
+.qq-card strong {
+  color: #101810;
+  font-size: clamp(24px, 4vw, 34px);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.qq-card a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  width: fit-content;
+  padding: 8px 14px;
+  color: #fff;
+  background: var(--leaf);
+  border-radius: 8px;
+}
+
+.qq-card-featured {
+  background: #ffe8a3;
+  border-color: #ffd873;
+}
+
 .image-modal {
   display: none;
   position: fixed;
@@ -747,7 +838,8 @@ main,
   }
 
   .quick-grid,
-  .people-grid {
+  .people-grid,
+  .qq-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -790,13 +882,15 @@ main,
   }
 
   .quick-grid,
-  .people-grid {
+  .people-grid,
+  .qq-grid {
     grid-template-columns: 1fr;
   }
 
   .feature-card,
   .info-band,
-  .credits {
+  .credits,
+  .content-panel {
     padding: 18px;
   }
 
