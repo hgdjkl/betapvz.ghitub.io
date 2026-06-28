@@ -511,8 +511,8 @@ main,
   min-height: 128px;
   padding: 18px;
   color: #121b11;
-  background: #fffaf0;
-  border: 1px solid rgba(255, 248, 220, 0.45);
+  background: #ffe8a3;
+  border: 1px solid #ffd873;
   border-radius: 8px;
   box-shadow: 0 8px 22px rgba(16, 28, 18, 0.1);
 }
